@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinamicas</title>
+</head>
+<body>
+    <h1>Imagens</h1>
+    <p>Ai estao as imagens:</p>
+    <picture>
+        <source media="(max-width:700px )" srcset="imagens/estevao3.png" type="image/png">
+        <source media="(max-width:1050px )" srcset="imagens/estevao2.png" type="image/png">
+        <img src="imagens/estevao1.png" alt="imagem flexivel">
+    </picture>
+    <h1>Colocando audio</h1>
+    <audio src="midia/happy-mistake.mp3" controls autoplay></audio>
+    <p>Outra forma de colocar audio</p>
+    <audio preload="metadata" controls autoplay>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.uav" type="audio/uav">
+        <p>Infelimente o seu navegador nao consegue reproduzir audio.</p>
+        <a href="midia/happy-mistake.mp3">Clique aqui para baixar o arquivo MP3</a>
+    </audio>
+</body>
+</html>
